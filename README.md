@@ -12,5 +12,18 @@
 `python manage.py createsuperuser`
 `python manage.py runserver 0.0.0.0:8000`
 
+`API Endpoints`
+
+* GET all comments
+`http://127.0.0.1:8000/api/v1/comments/`
+
+* POST comments
+`http://127.0.0.1:8000/api/v1/comments/`
+`{"comment_text": "Great_product", "orders": 2, "user": 1, "active": "true"}`
+
+* POST replies
+`http://127.0.0.1:8000/api/v1/comments/`
+`{"comment_text": "Great_product", "orders": 2, "user": 1, "active": "true", "parent": 18}`
+
 
 
